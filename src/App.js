@@ -17,6 +17,9 @@ import PropTypes from 'prop-types'
 
 
 function App() {
+  const [divstyle,theDivstyle] = useState({
+    width:'100vw'
+  })
   
   const [thestyle,setThestyle] = useState({
   color:'darkgrey',
@@ -57,14 +60,14 @@ function App() {
     <>
     {/* <Router> */}
     <div style={thestyle}>
-    <Navbar title='Home' dropdown='Im_dropdown'/>
-    <Alert className="alert alert-warning m-0" role="alert">
-    This is a warning alert—check it out!
-    </Alert>
-    <Alert title = {title}/>
-    <div className='container col-4 pd-0'>
-    <div><h2 className='mainone'>WELCOME TO REACT</h2></div>
-    <h4>Words & letters counter</h4>
+    <Navbar className='w-100' title='Home' dropdown='Im_dropdown'/>
+    {/* <Alert className="alert alert-warning m-0" role="alert"> */}
+    {/* This is a warning alert—check it out! */}
+    {/* </Alert> */}
+    {/* <Alert title = {title}/> */}
+    <div className='container ms-4 col-4 pd-0 d-flex flex-column justify-content-center'>
+    <div style={divstyle}><h2 className='mainone'>WELCOME TO REACT</h2></div>
+    <h4 style={divstyle}>Words & letters counter</h4>
     </div>
     <Textarea/>
     <div className='m-2 pd-1 d-flex'>

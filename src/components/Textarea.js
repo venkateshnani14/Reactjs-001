@@ -96,10 +96,10 @@ export default function Textarea(){
         <br></br>
         <button className='btn btn-primary txt-light' onClick={clickme}>{lettercase}</button>
         <button className='btn btn-primary txt-light ms-4' onClick={clickme2}>To lowercase</button>
-        <button className='btn btn-danger txt-light ms-4' onClick={clickme3}>Delete</button>
-        <button className='btn btn-dark txt-light ms-4' onClick={clickme4}>{mode}</button>
+        <button className='btn btn-danger txt-light ms-4 mt-2' onClick={clickme3}>Delete</button>
+        <button className='btn btn-dark txt-light ms-4 mt-2' onClick={clickme4}>{mode}</button>
         <h4 className='mb-0 mt-4'>Number of words and letters</h4>
-        <p className='my-0'>Your sentence has <b>{text.split(' ').length}</b> words and <b>{text.length}</b> letters.</p>
+        <p className='my-0'>Your sentence has <b>{text.split(' ').filter((element)=>{return element.length!=0}).length}</b> words and <b>{text.length}</b> letters.</p>
         <p className='my-0'>Estimated reading time: {text.split(" ").length * 0.006}</p>
    </div>
   )
