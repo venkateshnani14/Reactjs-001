@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+*.log
+/repo
+=======
+>>>>>>> 2bcb2a8997d6dab39e1f4cbc6d93b2dfd203e2a4
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -21,3 +28,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< HEAD
+=======
+>>>>>>> 821a7b539896c07bf17ab7bb06e31d6e7c073dc8
+>>>>>>> 2bcb2a8997d6dab39e1f4cbc6d93b2dfd203e2a4
