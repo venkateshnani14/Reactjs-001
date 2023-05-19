@@ -7,6 +7,12 @@ export default function Textarea(){
   const [text,setText] = useState(head);
   const [lettercase,setLettercase] = useState('To uppercase');
   const [title,setTitle] = useState({})
+  const [words,setWords] = useState('words')
+  
+  // 
+  // else{
+    // setWords('words')
+  // }
   // let wcounter = text.split(' ').length
   // const [wordcount,setWordcount] = useState(wcounter)
   // setWordcount(text.split(' ').length)
@@ -91,7 +97,7 @@ export default function Textarea(){
   //
   return(
     <div className='container-fluid ms-5 ' style={mystyle}>
-        <h5 className='mb-0'>Hello mates!Drop your text below...</h5>
+        <h5 className='mb-0'>Type something mate!</h5>
         <textarea className='textarea col-8' style={substyle} value={text} onChange={changes}/>
         <br></br>
         <button className='btn btn-primary txt-light' onClick={clickme}>{lettercase}</button>
@@ -99,7 +105,7 @@ export default function Textarea(){
         <button className='btn btn-danger txt-light ms-4 mt-2' onClick={clickme3}>Delete</button>
         <button className='btn btn-dark txt-light ms-4 mt-2' onClick={clickme4}>{mode}</button>
         <h4 className='mb-0 mt-4'>Number of words and letters</h4>
-        <p className='my-0'>Your sentence has <b>{text.split(' ').filter((element)=>{return element.length!=0}).length}</b> words and <b>{text.length}</b> letters.</p>
+        <p className='my-0'>Your sentence has <b>{text.split(' ').filter((element)=>{return element.length!=0}).length}</b> {words} and <b>{text.length}</b> letters.</p>
         <p className='my-0'>Estimated reading time: {text.split(" ").length * 0.006}</p>
    </div>
   )

@@ -66,8 +66,8 @@ function App() {
     {/* </Alert> */}
     {/* <Alert title = {title}/> */}
     <div className='container ms-4 col-4 pd-0 d-flex flex-column justify-content-center'>
-    <div style={divstyle}><h2 className='mainone'>WELCOME TO REACT</h2></div>
-    <h4 style={divstyle}>Words & letters counter</h4>
+    <div style={divstyle}><h2 className='mainone' id='h2'>WELCOME TO REACT</h2></div>
+    <h4 style={divstyle} id='h2_2'>Words & letters counter</h4>
     </div>
     <Textarea/>
     <div className='m-2 pd-1 d-flex'>
@@ -86,7 +86,6 @@ function App() {
     </div>
     </div>
     {/* </Router> */}
-
     </>
   );
   }
