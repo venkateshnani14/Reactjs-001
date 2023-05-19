@@ -72,7 +72,7 @@ function App() {
     <Textarea/>
     <div className='m-2 pd-1 d-flex'>
       <div className='col-1 mt-4'>
-    <button className='btn btn-primary txt-light ms-1 mt-1' onClick={happens}>Switch</button>
+    {/* <button className='btn btn-primary txt-light ms-1 mt-1' onClick={happens}>Switch</button> */}
       </div>
       {/* when you use this routing code , also uncomment the css in the app.css file */}
     {/* <Routes> */}
