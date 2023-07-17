@@ -106,7 +106,7 @@ export default function Textarea(){
         <button className='btn btn-dark txt-light ms-4 mt-2' onClick={clickme4}>{mode}</button>
         <h4 className='mb-0 mt-4'>Number of words and letters</h4>
         <p className='my-0'>Your sentence has <b>{text.split(' ').filter((element)=>{return element.length!=0}).length}</b> {words} and <b>{text.length}</b> letters.</p>
-        <p className='my-0'>Estimated reading time: {text.split(" ").length * 0.006}</p>
+        <p className='my-0'>Estimated reading time: <b>{text.split(" ").filter(()=>{return text.length!=0}).length * 0.006}</b> minutes</p>
    </div>
   )
 }

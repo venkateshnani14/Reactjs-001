@@ -22,7 +22,7 @@ function App() {
   })
   
   const [thestyle,setThestyle] = useState({
-  color:'darkgrey',
+  color:'rgb(43, 149, 236)',
   height:'100vh',
   margin:'0px'
   })
@@ -65,15 +65,15 @@ function App() {
     {/* This is a warning alert—check it out! */}
     {/* </Alert> */}
     {/* <Alert title = {title}/> */}
-    <div className='container ms-4 col-4 pd-0 d-flex flex-column justify-content-center'>
+    <div id='titlediv' className='container col-4 pd-0 d-flex flex-column justify-content-center'>
     <div style={divstyle}><h2 className='mainone' id='h2'>WELCOME TO REACT</h2></div>
     <h4 style={divstyle} id='h2_2'>Words & letters counter</h4>
     </div>
     <Textarea/>
-    <div className='m-2 pd-1 d-flex'>
-      <div className='col-1 mt-4'>
+    {/* <div className='m-2 pd-1 d-flex'> */}
+      {/* <div className='col-1 mt-4'> */}
     {/* <button className='btn btn-primary txt-light ms-1 mt-1' onClick={happens}>Switch</button> */}
-      </div>
+      {/* </div> */}
       {/* when you use this routing code , also uncomment the css in the app.css file */}
     {/* <Routes> */}
     {/* <Route path='/about' element={<About/>}/> */}
@@ -83,9 +83,9 @@ function App() {
     {/* </Routes> */}
     {/* </div> */}
     {/* <button className='btn btn-danger txt-light ms-4' onClick={clickme3}>Delete</button> */}
-    </div>
-    </div>
+    {/* </div> */}
     {/* </Router> */}
+    </div>
     </>
   );
   }

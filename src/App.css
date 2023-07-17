@@ -45,4 +45,5 @@
   margin-bottom: 14px;
   justify-content: center;
 }
-@media(max-width:500px){.mainone{width: 100vw;} #h2{color: rgb(43, 149, 236);font-size: x-large};#h2_2{color: darkgray;width: 100vw;}}
+@media(max-width:500px){.mainone{width: 100vw;} #h2{color: rgb(43, 149, 236);font-size: x-large};#h2_2{color: darkgray;width: 100vw;} #titlediv{margin: 0px 5%;}}
+#titlediv{display: flex;flex-direction: column;justify-content: center;}
